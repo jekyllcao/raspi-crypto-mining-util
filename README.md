@@ -11,3 +11,9 @@ After cloning the repo, you'll want to mark `./install.sh` and `run.sh` as execu
 You'll then need to run `./install.sh` to setup the necessary dependencies (one time only is fine) and then run `./run.sh` to kick off a tmux session.
 
 The session will be named `mining` so it's easy to identify at a later date.
+
+## before run.sh 
+Your should create account with email on https://minergate.com . and then execute the scipt as bellow:
+
+  run.sh <Your Email>
+  
