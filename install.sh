@@ -13,7 +13,8 @@ sudo apt-get -y install \
 	gcc \
 	gawk \
 	git \
-	tmux
+	tmux \
+	make
 
 # Get the miner from github
 git clone https://github.com/lucasjones/cpuminer-multi.git
@@ -21,9 +22,10 @@ git clone https://github.com/lucasjones/cpuminer-multi.git
 cd cpuminer-multi
 
 # Build the miner
-./autogen
+./autogen.sh
 ./configure
 make
+make install
 
 # If using zsh, add it to zshrc
 if [[ -f ~/.zshrc ]]; then
